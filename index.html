@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Yenita!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Fireworks Canvas for New Year Effect -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Animated Glowing Background Blobs -->
+    <div class="blob-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="grain-overlay"></div>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero reveal">
+        <div class="container text-center">
+            <div class="glass-card main-hero-card">
+                <p class="pre-heading">IT'S A SPECIAL DAY FOR</p>
+                <h1 class="sparkle-text">Yenita Aprilianty Simangunsong</h1>
+                <p class="subtitle mt-3">Selamat ulang tahun yang ke-20! <i>Welcome to the 20s club!</i> Semoga di fase
+                    kepala dua ini, langkahmu semakin mantap dan harimu selalu diwarnai dengan hal-hal yang
+                    menyenangkan. Teruslah berproses dan bersinar terang, biarkan semua kerja kerasmu membuahkan hasil
+                    yang sangat indah, sememukau ledakan kembang api yang menerangi langit malam. <i>Cheers to your new
+                        chapter!</i></p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <p>Eksplorasi Momen</p>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- 2. 12-GRID GALLERY SECTION -->
+    <section class="gallery-section reveal">
+        <div class="container">
+            <div class="section-header glass-card mini-glass text-center">
+                <h2>Aseekk kepala 2 yee</h2>
+            </div>
+
+            <div class="bento-12-grid mt-5">
+                <div class="bento-item pic-1"><img src="foto/1.jpg" alt="Foto 1"></div>
+                <div class="bento-item pic-2"><img src="foto/2.jpg" alt="Foto 2"></div>
+                <div class="bento-item pic-3"><img src="foto/3.jpg" alt="Foto 3"></div>
+                <div class="bento-item pic-4"><img src="foto/4.jpg" alt="Foto 4"></div>
+                <div class="bento-item pic-5"><img src="foto/5.jpg" alt="Foto 5"></div>
+                <div class="bento-item pic-6"><img src="foto/6.jpg" alt="Foto 6"></div>
+                <div class="bento-item pic-7"><img src="foto/7.jpg" alt="Foto 7"></div>
+                <div class="bento-item pic-8"><img src="foto/8.jpeg" alt="Foto 8"></div>
+                <div class="bento-item pic-9"><img src="foto/9.jpg" alt="Foto 9"></div>
+                <div class="bento-item pic-10"><img src="foto/10.jpeg" alt="Foto 10"></div>
+                <div class="bento-item pic-11"><img src="foto/11.jpg" alt="Foto 11"></div>
+                <div class="bento-item pic-12"><img src="foto/12.jpeg" alt="Foto 12"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WKWKWK FUNNY MOMENTS SECTION -->
+    <section class="gallery-section reveal">
+        <div class="container">
+            <div class="section-header glass-card mini-glass text-center"
+                style="background: rgba(255, 228, 230, 0.6); border-color: rgba(251, 113, 133, 0.3);">
+                <h2
+                    style="font-family: var(--font-sans); font-weight: 800; font-style: italic; letter-spacing: 3px; font-size: 2.8rem; color: #db2777;">
+                    WKWKWK</h2>
+                <p style="color: #be185d; font-weight: 500; margin-top: 5px;">gakuat banget bikinnya 😭 😭.</p>
+            </div>
+
+            <!-- Interactive Gift Box Container -->
+            <div id="giftBoxContainer" class="gift-wrapper mt-5 text-center">
+                <div id="giftBoxBtn" class="gift-box">
+                    <span class="gift-icon">🎁</span>
+                    <p class="gift-hint">Ketuk untuk membuka aib rahasia...</p>
+                </div>
+            </div>
+
+            <!-- Pre-hidden Grid -->
+            <div id="wkwkwkGrid" class="bento-11-grid mt-5" style="display: none;">
+                <div class="bento-item pic-13"><img src="foto/13.JPG" alt="Aib 1"></div>
+                <div class="bento-item pic-14"><img src="foto/14.JPG" alt="Aib 2"></div>
+                <div class="bento-item pic-15"><img src="foto/15.JPG" alt="Aib 3"></div>
+                <div class="bento-item pic-16"><img src="foto/16.JPG" alt="Aib 4"></div>
+                <div class="bento-item pic-17"><img src="foto/17.JPG" alt="Aib 5"></div>
+                <div class="bento-item pic-18"><img src="foto/18.JPG" alt="Aib 6"></div>
+                <div class="bento-item pic-19"><img src="foto/19.JPG" alt="Aib 7"></div>
+                <div class="bento-item pic-20"><img src="foto/20.JPG" alt="Aib 8"></div>
+                <div class="bento-item pic-21"><img src="foto/21.JPG" alt="Aib 9"></div>
+                <div class="bento-item pic-22"><img src="foto/22.JPG" alt="Aib 10"></div>
+                <div class="bento-item pic-23"><img src="foto/23.JPG" alt="Aib 11"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. HIGHLIGHT MESSAGE -->
+    <section class="highlight-section reveal">
+        <div class="container text-center">
+            <div class="glass-card quote-card">
+                <div class="quote-icon">✦</div>
+                <h3 class="playfair-title">Selamat Ulang Tahun ke-20!</h3>
+                <p>20 tahun sudah kamu mewarnai dunia! Di usia yang baru ini, semoga kamu semakin hebat, bersinar terang
+                    sedahsyat kembang api di awal tahun, selalu dilimpahi kesehatan dan kelancaran rezeki. Mari rayakan
+                    hari ini dengan semangat dan banyak syukur!</p>
+                <div class="divider"></div>
+                <p class="sender">Intinya semangat teruss yaa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal untuk memperbesar Foto -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
