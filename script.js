@@ -86,8 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
                 ctx.fillStyle = this.color;
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = this.color;
+                /* shadowBlur dinonaktifkan murni agar performa ngescroll HP super halus (60fps) */
                 ctx.fill();
                 ctx.restore();
             }
@@ -118,12 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Auto trigger fireworks
-        setInterval(() => {
-            const x = Math.random() * canvas.width;
-            const y = Math.random() * (canvas.height * 0.5); // Mostly top half
-            createFireworks(x, y);
-        }, 600); // every 0.6 seconds
+        // Jalankan kembang api secukupnya di awal (biar HP tidak lag saat layarnya di-scroll)
+        setTimeout(() => createFireworks(canvas.width * 0.2, canvas.height * 0.3), 500);
+        setTimeout(() => createFireworks(canvas.width * 0.8, canvas.height * 0.4), 1200);
+        setTimeout(() => createFireworks(canvas.width * 0.5, canvas.height * 0.2), 2000);
         
         animateFireworks();
 
